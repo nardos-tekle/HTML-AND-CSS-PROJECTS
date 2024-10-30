@@ -5,3 +5,14 @@ list-style-type: upper-roman;
 ul {
 list-style-type: square;
 }
+
+.orange-text-shadow {
+  text-shadow:
+    1px 1px 2px orange,
+    0 0 1em red,
+    0 0 0.2em yellow;
+  color: black;
+  font: 
+  1.5em Georgia,
+    serif;
+}
