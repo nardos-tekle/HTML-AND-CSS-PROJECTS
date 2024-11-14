@@ -1,0 +1,19 @@
+h3{
+    font-style: bold;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+    color: darkblue;
+}
+
+img{
+    display: flex;
+    border: 2px dashed red;
+    width: 600px;
+    height: 300px;
+}

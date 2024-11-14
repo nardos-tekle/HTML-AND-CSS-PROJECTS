@@ -3,14 +3,15 @@
     <head>
         <title>Welcome to the Van Gogh Exhibit</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
     <body>
         <!--NAV Bar-->
         <div>
-            <nav>
+            <nav class="nav-bar">
                 <ul>
-                    <li><a href="one_page_website.html">HOME</a></li>
-                    <li><a href="Contact-website.html">CONTACT</a></li>
+                    <a href="one_page_website.html">HOME</a>
+                    <a href="Contact-website.html">CONTACT</a>
 
                 </ul>
             </nav>
@@ -18,19 +19,38 @@
                 <div>
                     <h1> Contact us! </h1>
                 </div>
+
+        </div>
+    
             </header>
             <section>
                 <div>
                     <h3> Please provide your contact and a message of your inquiry</h3>
                 </div>
                 <form>
-                    <input type="text" placeholder="First Name"
-                    <input type="text" placeholder="Last Name"><br>
-                    <input type="email" placeholder="Email"><br>
-                    <input type="tel" placeholder="Phone Number"><br>
-                    <input type="checkbox" id="Newsletter">
-                    <textarea placeholder= "Type message here..."></textarea><br>
+                    <div class="label">
+                    <input type="text"  placeholder="First Name">
+                    <label for="First Name">First Name:</label>
+
+                    <input type="text" placeholder="Last Name">
+                    <label for="Last Name">Last Name:</label>
+ 
+                    <input type="email" placeholder="Email">
+                    <label for="Email">Email:</label>
+
+                    <input type="tel" placeholder="Phone Number">
+                    <label for="tel">Phone Number:</label><br>
+
+                    <input type="checkbox" placeholder="checkbox">
+                    <label for="checkbox">Subscribtion Checkbox:</label><br>
+
+                    <textarea placeholder= "Type message here..." class="text-area"></textarea><br>
+                    <label for="textarea">Type Message Above</label>
+ 
                     <input type="submit" value="Submit">
+                    <label for="Submit">Submit</label><br>
+
+ 
                 </form>
             </section>
             <!--FOOTER-->
