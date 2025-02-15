@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Van Gogh Exhibit</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    </head>
-    <body>
-        <!--NAV Bar-->
+
+<head>
+    <title>Van Gogh Exhibit</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+    <!--NAV Bar-->
+    <div>
+        <nav class="nav-bar">
+            <ul>
+                <a href="one_page_website.html">HOME</a>
+                <a href="Contact-website.html">CONTACT</a>
+
+            </ul>
+            <ul>
+                <a href="#A Pair of Shoes" <li>A Pair of Shoes</a></li>
+                <a href="#Cafe Terrace at Night" <li>Cafe Terrace at Night</a></li>
+                <a href="#The Church at Auvers" <li>The Church at Auvers</a></li>
+                <a href="#Wheatfields with Crows" <li>Wheatfields with Crows</a></li>
+                <a href="#The Starry Night" <li>The Starry Night</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--Header-->
+
+    <header>
         <div>
-            <nav class="nav-bar">
-                <ul>
-                    <a href="one_page_website.html">HOME</a>
-                    <a href="Contact-website.html">CONTACT</a>
-
-                </ul>
-                <ul>
-                    <a href="#A Pair of Shoes"<li>A Pair of Shoes</a></li>
-                    <a href="#Cafe Terrace at Night"<li>Cafe Terrace at Night</a></li>
-                    <a href="#The Church at Auvers"<li>The Church at Auvers</a></li>
-                    <a href="#Wheatfields with Crows"<li>Wheatfields with Crows</a></li>
-                    <a href="#The Starry Night"<li>The Starry Night</a></li>
-                </ul>
-            </nav>
+            <h1>Welcome to the Van Gogh Exhibit </h1>
         </div>
-         <!--Header-->
+    </header>
 
-         <header>
-            <div>
-                <h1>Welcome to the Van Gogh Exhibit </h1>
+    <!--Van gogh Art-->
+    <section>
+        <div>
+            <h2>Walking through some of his best works</h2>
+            <div id="A Pair of Shoes">
+                <div>
+                    <h3>A Pair of Shoes</h3>
+                    <img src="Images(2)/A Pair of Shoes copy.jpeg" onclick="openModal();currentSlide(1)"
+                        alt="Van Gogh's A Pair of Shoes Piece" class="center">
+                </div>
+
             </div>
-         </header>
-
-         <!--Van gogh Art-->
-         <section>
-            <div>
-                <h2>Walking through some of his best works</h2>
-                <div id="A Pair of Shoes">
-                    <div>
-                        <h3>A Pair of Shoes</h3>
-                        <img src="Images(1)/A Pair of Shoes.jpeg" alt="Van Gogh's A Pair of Shoes Piece" class="center">
-                    </div>
-
-                </div>
-                <div id="Cafe Terrace at Night">
-                    <div>
-                        <h3>Cafe Terrace at Night</h3>
-                        <img src="Images(1)/Cafe Terrace at Night.jpeg" alt="Van Gogh's Cafe Terrace at Night Piece" class="center">
-
-
-                    </div>
-                </div>
-                <div id="The Church at Auvers">
-                    <div>
-                        <h3>The Church at Auvers</h3>
-                        <img src="Images(1)/The Church at Auvers.jpeg" alt="Van Gogh's The Church at Auvers Piece" class="center">
-                    </div>
-                    </div>
-                    <div id="Wheatfields with Crows">
-                        <div>
-                            <h3>Wheatfields with Crows</h3>
-                            <img src="Images(1)/Wheatfields with Crows.jpeg" alt="Van Gogh's Wheatfields with Crows Piece" class="center">
-
-                        </div>
-                    </div>
-                    <div id="The Starry Night">
-                        <div>
-                            <h3>The Starry Night</h3>
-                            <img src="Images(1)/The Starry Night.jpeg" alt="Van Gogh's Starry Night Piece" class="center">
-                        </div>
-                    </div>
-            
+            <div id="Cafe Terrace at Night">
+                <div>
+                    <h3>Cafe Terrace at Night</h3>
+                    <img src="Images(1)/Cafe Terrace at Night.jpeg" onclick="openModal();currentSlide(2)"
+                        alt="Van Gogh's Cafe Terrace at Night Piece" class="center">
                 </div>
             </div>
-         </section>
-         <section>
-            <div>
-                <h3> Van Gogh Story </h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KlBG2ojDbQ8?si=w5boyuM4I7u56qzf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="The Church at Auvers">
+                <div>
+                    <h3>The Church at Auvers</h3>
+                    <img src="Images(1)/The Church at Auvers.jpeg" onclick="openModal();currentSlide(3)"
+                        alt="Van Gogh's The Church at Auvers Piece" class="center">
+                </div>
             </div>
-         </section>
-         <!--FOOTER-->
-         <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p> Van Gogh Exhibit &copy;</p>
-                    </td>
-                    <td>
-                        <p>vangoghexperience@mail.com</p>
-                    </td>
-                </tr>
-            </table>
-         </footer>
-    </body>
+        <div id="The Starry Night">
+            <div>
+                <h3>The Starry Night</h3>
+                <img src="Images(1)/The Starry Night.jpeg" onclick="openModal();currentSlide(4)"
+                    alt="Van Gogh's Starry Night Piece" class="center">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close-cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext"> 1 / 4 </div>
+                    <img src="Images(1)/A Pair of Shoes.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"> 2 / 4</div>
+                    <img src="Images(1)/Cafe Terrace at Night.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"> 3 / 4</div>
+                    <img src="Images(1)/The Church at Auvers.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"> 4 / 4</div>
+                    <img src="Images(1)/The Starry Night.jpeg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="Images(2)/A Pair of Shoes copy.jpeg" onclick="currentSlide(1)"
+                        alt="A pair of wornout brown boots">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images(2)/Cafe Terrace at Night copy.jpeg" onclick="currentSlide(2)"
+                        alt="Cafe Terrace in the Night">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images(2)/The Church at Auvers copy.jpeg" onclick="currentSlide(3)"
+                        alt="A white church at Auvers">
+
+                <div class="column">
+                    <img class="demo" src="Images(2)/The Starry Night copy.jpeg" onclick="currentSlide(4)"
+                        alt="Starry Night">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3> Van Gogh Story </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KlBG2ojDbQ8?si=w5boyuM4I7u56qzf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p> Van Gogh Exhibit &copy;</p>
+                </td>
+                <td>
+                    <p>vangoghexperience@mail.com</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script src="JS/one_page.js"></script>
+</body>
+
 </html>
