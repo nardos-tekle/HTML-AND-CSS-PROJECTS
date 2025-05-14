@@ -210,6 +210,13 @@ footer {
 }
 /***** END OF VIDEO STYLING *****/
 
+.image {
+    width: 50%; /* Ensures all images stay within the width of their container */
+    height: 50%; 
+    float: center;
+    margin: auto auto auto auto;
+}
+
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
@@ -219,8 +226,9 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
+    font-size: 10px; 
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 900px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #74b6da; /* Sets the background color of the columns with class Column_1 */
 }
 
@@ -235,8 +243,9 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
+    font-size: 10px; 
     padding-top: 1.9%;
-    height: 400px;
+    height: 900px;
     background-color: #0061ac;
 }
 
@@ -422,6 +431,7 @@ form {
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
 	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
 	clear: both; /* This clears any other elements from floating on the left or the right of an element */
+    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
 }
 /***** End of Table Styling *****/
 
